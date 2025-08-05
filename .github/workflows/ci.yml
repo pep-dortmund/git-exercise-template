@@ -29,17 +29,17 @@ jobs:
           environment-file: environment.yml
 
       - name: Setup
-        # run: |
-        #   pip install install-texlive
-        #   curl -fLO https://raw.githubusercontent.com/pep-dortmund/toolbox-workshop/main/tex-packages.txt
-        #   python -m install_texlive -p $HOME/texlive -t $TEXLIVE_VERSION --collections='-a' --package-file tex-packages.txt --update -v
-        #
-        #   # add to path for following steps
-        #   echo "$HOME/texlive/$TEXLIVE_VERSION/bin/x86_64-linux" >> $GITHUB_PATH
-        #   export PATH="$HOME/texlive/$TEXLIVE_VERSION/bin/x86_64-linux:$PATH"
-        #
-        #   # generate the lualatex font cache, otherwise it is done in parallel when calling make
-        #   luaotfload-tool --update --force
+        run: |
+          # pip install install-texlive
+          # curl -fLO https://raw.githubusercontent.com/pep-dortmund/toolbox-workshop/main/tex-packages.txt
+          # python -m install_texlive -p $HOME/texlive -t $TEXLIVE_VERSION --collections='-a' --package-file tex-packages.txt --update -v
+          #
+          # # add to path for following steps
+          # echo "$HOME/texlive/$TEXLIVE_VERSION/bin/x86_64-linux" >> $GITHUB_PATH
+          # export PATH="$HOME/texlive/$TEXLIVE_VERSION/bin/x86_64-linux:$PATH"
+          #
+          # # generate the lualatex font cache, otherwise it is done in parallel when calling make
+          # luaotfload-tool --update --force
 
       - name: Check Setup
         run: |
