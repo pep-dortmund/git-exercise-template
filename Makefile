@@ -5,3 +5,8 @@ plot1.pdf: plot1.py
 
 plot2.pdf: plot2.py
 	python plot2.py
+
+clean:
+	rm -f plot{1,2}.pdf
+
+.PHONY: all clean
