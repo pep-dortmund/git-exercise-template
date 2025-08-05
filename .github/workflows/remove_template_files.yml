@@ -30,7 +30,7 @@ jobs:
           touch README.md
           NAME="${GITHUB_REPOSITORY##*/}"
           echo "# $NAME" >> README.md
-          echo "Generated from [toolbox-workshop-protocol-template](https://github.com/pep-dortmund/toolbox-workshop-protocol-template)." >> README.md
+          echo "Generated from [git-exercise-template](https://github.com/pep-dortmund/git-exercise-template)." >> README.md
           echo -e "\nFind more information in [notes.md](notes.md)." >> README.md
 
       # Commit modified files
