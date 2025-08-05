@@ -1,0 +1,16 @@
+name: toolbox
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - matplotlib
+  - numpy>=2.0
+  - pandas
+  - requests
+  - scipy
+  - sympy
+  - uncertainties
+  - jupyter
+  - notebook
+  - ipython
