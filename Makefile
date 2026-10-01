@@ -7,6 +7,7 @@ plot2.pdf: plot2.py
 	python plot2.py
 
 clean:
-	rm -f plot{1,2}.pdf
+	rm -f plot1.pdf
+	rm -f plot2.pdf
 
 .PHONY: all clean
